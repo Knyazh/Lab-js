@@ -7,15 +7,15 @@ function gameFunc() {
     let choose = prompt("1-Rock, 2-Paper, 3- Scissors")
     if(choose==="1"){
         myAnswer=game[0];
-        if(randomIndex=0){
+        if(randomIndex===0){
             let answer = "Draw"
             alert ( `Computer select Rock = ${answer}`);
         }
-        else if(randomIndex=1){
+        else if(randomIndex===1){
             let answer ="You Lose";
             alert(`Computer select Paper= ${answer}`);
         }
-        else if(randomIndex=2){
+        else if(randomIndex===2){
             let answer ="You Win!";
             alert(`Computer select scissors = ${answer}`);
         }
