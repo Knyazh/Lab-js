@@ -3,7 +3,7 @@ let myAnswer;
 let answer;
 
 
-function gameFunc() {
+function gameFunc(randomIndex) {
     let choose = prompt("1-Rock, 2-Paper, 3- Scissors")
     if(choose==="1"){
         myAnswer=game[0];
@@ -63,7 +63,7 @@ function gameFunc() {
 
 while (true) {
     let randomIndex = Math.floor(Math.random() * 3);
-    gameFunc();
+    gameFunc(randomIndex);
     let playAgain = prompt("Do you want to play again? (yes/no)");
     if (playAgain.toLowerCase() !== "yes") {
       break;
